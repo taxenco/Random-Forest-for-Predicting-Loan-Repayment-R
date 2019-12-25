@@ -80,33 +80,7 @@ The original data is not cleaned and normalized as there are attributes with mis
 
 The cleaning of the data 
 
-* User table:
-      - username primary key
-      - avatar_url
-      - name
-      
-* Topics table:
-      - slug primary key
-      - description
-      - name
 
-* Articles table:
-      - article_id Primary Key
-      - title
-      - body
-      - votes
-      - topic Foreign Key 
-      - author Foreign Key
-      - created_at
-
-* Comments table:
-      - comment_id Primary Key
-      - author Foreign Key
-      - article_id Foreign Key 
-      - votes
-      - created_at 
-      - body
-      
 # Built With
 
 * Linux - Operating system
