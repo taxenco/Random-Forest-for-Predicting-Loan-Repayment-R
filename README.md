@@ -91,8 +91,8 @@ The cleaning of the data
 
 # Refences
 
-1.https://en.wikipedia.org/wiki/Statistical_classification
-2.MSc Data science notes, Salford University. Classification: Decision trees
+* 1 - https://en.wikipedia.org/wiki/Statistical_classification
+* 2 - MSc Data science notes, Salford University. Classification: Decision trees
 3.Han, Kamber, and Pei. Data Mining: Concepts and Techniques,3rd Edition, 2012.
 4- https://en.wikipedia.org/wiki/Decision_tree_learning
 5- https://en.wikipedia.org/wiki/Random_forest
