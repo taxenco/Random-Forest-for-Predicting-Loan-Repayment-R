@@ -40,7 +40,7 @@ The columns are as following:
 * Loan_Status
 
 
-![Alt text](relative/path/to/img.jpg?raw=true "rf")
+![Alt text](relative/path/to/img.png?raw=true "rf")
 s
 # Database schema 
 
