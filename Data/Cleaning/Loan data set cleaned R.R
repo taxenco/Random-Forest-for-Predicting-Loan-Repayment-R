@@ -1,6 +1,6 @@
 ###READ FILE###
 library('reshape2')
-setwd('C:/Users/carlo/Desktop/LOAN PREDICCTION PROJECT/Exercise 1')
+setwd('/Desktop/LOAN PREDICCTION PROJECT/Exercise 1')
 data<-read.csv('Loan_Dataset.csv',header=T,na.strings=c("", "NA"))
 
 ###CLEANING MISSING VALUES###
