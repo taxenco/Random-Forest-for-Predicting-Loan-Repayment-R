@@ -1,10 +1,6 @@
 # Random Forest for Predicting Loan Repayment
 
-The project consists of Predicting Loan Repayments using the Random Forest Supervised Learning algorithm. The Random forest uses an ensemble learning method for regression and the bagging technique. The trees in random forests are run in parallel. There is no interaction between these trees while building the trees.
-
-<img src="./rf.png" alt="Random Forest schema"/>
-
-
+The project consists of Predicting Loan Repayments using the Random Forest Supervised Learning algorithm. The Random forest uses an ensemble learning method for classification and the bagging technique. The trees in random forests are run in parallel. There is no interaction between these trees while building the trees.
 
 # Getting Started
 
@@ -19,6 +15,42 @@ The project consists of Predicting Loan Repayments using the Random Forest Super
 * Visual Studio Code or another alternative source-code editor.
 * Linux.
 * R support for Visual Studio Code.
+* Able to read CSV files.
+
+
+# Objective of the project 
+
+This project will implement a Random Forest algorithm on a dataset for classification purposes and predicting whether a customer will pay back the loan or not and also includes an assessment on whether the model has correctly predicted the outcome or not. 
+
+# Theory on classification models
+
+Classification is a statistical technique used for predicting, classifying and categorizing to
+which of a set of categories a new observation belongs.The classification models need a collection of 
+records "Training set",  which each record contains a set of attributes, one of the attributes is the class. 
+A model will be built according to the classification technique chosen, and It will find a model for the class attribute 
+as a function of the values of the other attributes. The model built should assign a class value as accurate as possible to 
+the unseen records.  Finally, the model will be validated in Test set  in order to determine the accuracy of the model.
+
+There are different techniques of classification that could be used for predicting, classifying
+and categorizing. The most important are as follows:
+
+* Decision Tree-based methods
+* Rule-based methods
+* Memory-based reasoning
+* Neural Networks
+* Support Vector Machines
+
+Random Forest is a supervised learning algorithm that can be used for both regression and
+classification tasks, and It belongs to the Decision Tree-based methods. The Decision
+trees  is a tree in which each internal "non-leaf" node is labelled with an input feature. The
+arcs coming from a node labelled with an input feature are labelled with each of the possible
+values of the target or output feature, or the arc leads to a subordinate decision node on a
+different input feature. Each leaf of the tree is labelled with a class or a probability distribution
+over the classes
+
+<img src="./rf.png" alt="Random Forest schema"/>
+
+
 
 
 # Original data description
@@ -78,17 +110,13 @@ The cleaning of the data
 # Built With
 
 * Linux - Operating system
-* npm - Testing 
-* JavaScript - Build the API
-* PSQL -Database
-* Knex - Connect JavaScript with the database
-* Express - Web application framework
+* R programming language
+* CSV files
 
 # Authors
 
 - Carlos Beltran.
-- NortCoders.
 
 # Acknowledgments
 
-The authors would like to thank all the team of NorthCoders.
+The authors would like to thank Salford University.
