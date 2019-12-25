@@ -2,6 +2,9 @@
 
 The project consists of Predicting Loan Repayments using the Random Forest Supervised Learning algorithm. The Random forest uses an ensemble learning method for regression and the bagging technique. The trees in random forests are run in parallel. There is no interaction between these trees while building the trees.
 
+<img src="./rf.png" alt="Random Forest schema"/>
+
+
 
 # Getting Started
 
@@ -20,9 +23,7 @@ The project consists of Predicting Loan Repayments using the Random Forest Super
 
 # Original data description
 
-The original data set is made of 614 rows and  xx columns
-
-The columns are as following:
+The original data set is made of 614 rows and 14 columns. The columns are as following:
 
 * Loan_ID
 * Gender
@@ -37,13 +38,15 @@ The columns are as following:
 * Loan_Amount_Term
 * Credit_History
 * Property_Area
-* Loan_Status
+* Loan_Status --> Target variable
 
-<img src="./rf.png" alt="My cool logo"/>
+ Note: Find the original data on /Data/Loan/Dataset.csv
 
-![Alt text](relative/path/to/img.png?raw=true "rf")
-s
-# Database schema 
+# Cleaning Process 
+
+The original data is not cleaned and normalized as there are attributes with missing values and others with outliers that distort the information extracted. Therefore cleaning and normalization techniques have been performed before to run the Random Forest algorithm.
+
+The cleaning of the data 
 
 * User table:
       - username primary key
