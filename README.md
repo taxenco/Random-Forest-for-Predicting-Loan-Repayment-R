@@ -39,6 +39,7 @@ The columns are as following:
 * Property_Area
 * Loan_Status
 
+<img src="./rf.png" alt="My cool logo"/>
 
 ![Alt text](relative/path/to/img.png?raw=true "rf")
 s
