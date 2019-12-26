@@ -96,7 +96,7 @@ Note: Find the original data on /Data/Loan/Dataset.csv
 
 The original data is not cleaned and normalized as there are attributes with missing values and others with outliers that distort the information extracted. Therefore cleaning and normalization techniques have been performed before to run the Random Forest algorithm.
 
-<img src="./rf2.png" alt="Data pre-cleaning"/>
+<img src="./preCleaningData.png" alt="Data pre-cleaning"/>
 
 The data pre-processing performed has consisted on replacing [3][8] the missing values (NA)
 for central tendency measures such a mode and mean, and on subsequent stage outliers’
