@@ -23,6 +23,11 @@ The project consists of Predicting Loan Repayments using the Random Forest Super
 
 This project will implement a Random Forest algorithm on a dataset for classification purposes and predicting whether a customer will pay back the loan or not and also includes an assessment on whether the model has correctly predicted the outcome or not.
 
+
+Important: this project will use a black-box approach making use of other’s packages to analyse the information.
+The black-box approach has been chosen for its simplicity but needs to be noted that this approach entails a
+great peril of not understanding what happens within the function and end up with wrong results.
+
 # Theory on classification models
 
 Classification [1] is a statistical technique used for predicting, classifying and categorizing to
@@ -211,9 +216,58 @@ of nodes in tree were between 70 and 75.
 
 <img src="./Pics/nodes.png" alt="nodes"/>
 
-Important: this project will use a black-box approach making use of other’s packages to analyse the information.
-The black-box approach has been chosen for its simplicity but needs to be noted that this approach entails a
-great peril of not understanding what happens within the function and end up with wrong results.
+In order to see whether the Random forest model can be improved, we will use the function
+tuneRF()[14]. X request for the variable of the dataset, but the target value, while Y is the target
+value. Stepfactor increases or decreases the Mtry at each iteration. The plot is whether to plot
+the OOB error as a function of Mtry. Ntreetry is the number of the number of trees used at the
+tuning step. Trace is whether to print the progress of the search and Improve the (relative)
+improvement in OOB error must be by this much for the search to continue.
+
+The values were assigned randomly initially, and they have tweaked until the optimal was found.
+
+<img src="./Pics/tune.png" alt="tune"/>
+
+Along with the TuneRF() function, we will use the figure 14 to tune the model and try to
+improve its performance. The figure 14 shows that OOB achieves a steady value around 150
+trees, while figure 19, extracted from TuneRf(), shows that OOB error is optimal at 3 Mtry.
+
+<img src="./Pics/oobError.png" alt="oobError"/>
+
+The Random Forest model is re-run with the new parameter Ntree= 100 and Mtry=3
+
+The results of the trained Random Forest model are an out of bag error of 17.48 %, which is
+higher than the original model 16.59%, Although, it still a good result it has got worse with the
+tune. The same has happened with the classification error that has worse it performance with
+NO at 49% and YES 4%, respectively.
+
+<img src="./Pics/test3.png" alt="test3"/>
+
+
+However, the tuned model has performed better with the test data set than the original Radom
+Forest. The accuracy is slightly better, and the 95 % CI has increased a bit too. The Sensitivity
+has worsened a bit, and the Specificity has been perfect this time.
+
+<img src="./Pics/confuMatrix.png" alt="oobError"/>
+
+
+On the overall, the tune has been useful to improve slightly the model. Even though It still
+suffering to predict correctly NO and It significantly impacts Its accuracy.
+
+
+# Conclusion 
+
+The Random Forest is one of the decision Tree-based methods that help us with classification
+task. The benefits of using Random Forest is that reduces the variance of the model due to the
+decorrelation of the trees and averaging the results, as well as prevention of model overfitting.
+
+
+The data selected was data of loan approvals, and the purpose of the task was classifying
+whether the loan would be approved using the Random Forest model. The dataset was cleaned
+of missing values and removed outliers that could distortion the results.
+
+The implementation of the Random Forest has achieved its purpose of building a satisfactory model to
+classify customer for loan approval. However, the results could be improved in order to achieve a sound model 
+able to be implemented. In that sense, a bigger dataset will be needed to train more the model. 
 
 # Refences
 
