@@ -58,9 +58,19 @@ increases the overall result.
 
 <img src="./rf2.png" alt="Random Forest schema 2"/>
 
-# Original data description
+One of the advantages [7] of using the Random Forest model is that the algorithm is simple,
+and It uses default hyperparameter, which produces a good prediction, and is easy to
+understand. Besides, Random Forest prevents to incur in overfitting since It uses enough trees
+to add additional randomness to the model. On the other hand, the main limitation [7] of Random Forest
+is that a large number of trees can make the algorithm and ineffective for real-time prediction.
 
-The original data set is made of 614 rows and 14 columns. The columns are as following:
+# Data
+
+The data selected is a dataset of customer eligibility for a loan.The dataset used was found on:
+
+- https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/.
+
+The dataset is made up of 614 rows and 13 columns or attributes. The 13 attributes are as follows:
 
 - Loan_ID
 - Gender
@@ -68,22 +78,50 @@ The original data set is made of 614 rows and 14 columns. The columns are as fol
 - Dependents
 - Education
 - Self_Employed
-- ApplicantIncome
-- Co-Applicant
-- Income
+- Applicant Income
+- Co-Applicant Income
 - LoanAmount
 - Loan_Amount_Term
 - Credit_History
 - Property_Area
 - Loan_Status --> Target variable
 
+All the variables are categorized as factors but Applicant Income, Loan Amount, Loan Amount
+Term and, Credit History which is integers, and Co-applicant Income which is considered
+numerical. The dependent variable is Loan status, the rest of the attributes are independent.
+
 Note: Find the original data on /Data/Loan/Dataset.csv
 
-# Cleaning Process
+# Data cleaning
 
 The original data is not cleaned and normalized as there are attributes with missing values and others with outliers that distort the information extracted. Therefore cleaning and normalization techniques have been performed before to run the Random Forest algorithm.
 
-The cleaning of the data
+<img src="./rf2.png" alt="Data pre-cleaning"/>
+
+The data pre-processing performed has consisted on replacing [3][8] the missing values (NA)
+for central tendency measures such a mode and mean, and on subsequent stage outliers’
+detections [3][8] and treatment [3][8]. The missing values on the dataset were found on all independent
+all attributes, but Applicant Income, Co-applicant Income and Property Area, as you can appreciate on picture above.
+
+Note that the central tendency measures [8] were applied for Its simplicity and because It was
+not biasing the information since the number of the missing values on every single attribute
+was not high. Besides, it is a simple and powerful technique for cleaning data. However, It
+suffers from arbitrarity, and It may lead to data corruption. The central tendency measures
+applied to the missing values by attribute is described as follow:
+
+- Gender --> Mode
+- Dependents --> Mode
+- Self- Employed --> Mode
+- Loan Amount --> Mean
+- Loan Amount Term --> Mean
+
+The missing values of the Credit History were removed since I considered Credit History a
+critical attribute which is better not having the information rather than inferring a value.
+It was done this way to prevent biasing results.
+
+A Boxplot Diagram detected the outliers [9] as It shows the picture below:
+
+<img src="./plotBox.png" alt="Plot Box"/>
 
 # Refences
 
