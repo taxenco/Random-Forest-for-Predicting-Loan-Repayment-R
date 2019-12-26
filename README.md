@@ -47,7 +47,7 @@ values of the target or output feature, or the arc leads to a subordinate decisi
 different input feature. Each leaf of the tree is labelled with a class or a probability distribution
 over the classes.
 
-<img src="./rf.png" alt="Random Forest schema"/>
+<img src="./Pics/rf.png" alt="Random Forest schema"/>
 
 Random Forest[5]operates by constructing a multitude of decision trees at training time and
 outputting the class that is the mode of the classes (classification) or mean prediction
@@ -56,7 +56,7 @@ overfitting to their training set. Note that most of the time Random Forest mode
 with the “Bagging” [6] method. The general idea of the bagging method is that a combination of learning models
 increases the overall result.
 
-<img src="./rf2.png" alt="Random Forest schema 2"/>
+<img src="./Pics/rf2.png" alt="Random Forest schema 2"/>
 
 One of the advantages [7] of using the Random Forest model is that the algorithm is simple,
 and It uses default hyperparameter, which produces a good prediction, and is easy to
@@ -96,7 +96,7 @@ Note: Find the original data on /Data/Loan/Dataset.csv
 
 The original data is not cleaned and normalized as there are attributes with missing values and others with outliers that distort the information extracted. Therefore cleaning and normalization techniques have been performed before to run the Random Forest algorithm.
 
-<img src="./preCleaningData.png" alt="Data pre-cleaning"/>
+<img src="./Pics/preCleaningData.png" alt="Data pre-cleaning"/>
 
 The data pre-processing performed has consisted on replacing [3][8] the missing values (NA)
 for central tendency measures such a mode and mean, and on subsequent stage outliers’
@@ -121,7 +121,16 @@ It was done this way to prevent biasing results.
 
 A Boxplot Diagram detected the outliers [9] as It shows the picture below:
 
-<img src="./plotBox.png" alt="Plot Box"/>
+<img src="./Pics/plotBox.png" alt="Plot Box"/>
+
+All the data that was above of the maximum was replaced by the value of the maximum value
+of the boxplot. It has been made in order to smooth the data and prevent the data to be skewed
+for the outliers.
+
+Please find the summary and the boxplot diagram of the training dataset post-processing as per
+below:
+<img src="./Pics/plotBox2.png" alt="Plot Box"/>
+<img src="./Pics/afterCleaning.png" alt="Plot Box"/>
 
 # Refences
 
