@@ -6,8 +6,8 @@ The project consists of Predicting Loan Repayments using the Random Forest Super
 
 - Download [https://code.visualstudio.com/] or another alternative source-code editor of your preference
 - Download the project on [https://github.com/taxenco/Random-Forest-for-Predicting-Loan-Repayment-R.git].
-- Go to your terminal an run the the following command --> git clone https://github.com/taxenco/Random-Forest-for-Predicting-Loan-Repayment-R.git.
-- Access to Visual Studio Code or another alternative source-code editor an open the project. Alternatively, you can access the project on through the terminal.
+- Go to your terminal and run the following command --> git clone https://github.com/taxenco/Random-Forest-for-Predicting-Loan-Repayment-R.git.
+- Access to Visual Studio Code or another alternative source-code editor and open the project. Alternatively, you can access the project on through the terminal.
 - Download R support for Visual Studio Code
 
 # Prerequisites
