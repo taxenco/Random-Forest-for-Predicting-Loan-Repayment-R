@@ -187,6 +187,34 @@ onwards the value does not change significantly.
 
 <img src="./Pics/errors.png" alt="Errors"/>
 
+Once the model has been trained, it needs to be tested with data that It has not been seen yet.
+The model trained shows a result [13] of its performance on the test a bit poor with an Accuracy
+of 0.72 which means that the only 72% of the results were predicted correctly. The confidence
+interval of 95 % the model explains between a 63% and 80 % of the data on the test set. The
+reason why the model performs poorly is explained by its Sensitivity which is at 39% and
+means that the model only predicts correctly YES 39% of the times, while the Specificity is at
+0.95 that means that No is predicted correctly 95% of the time.
+
+<img src="./Pics/test2.png" alt="test2"/>
+Another important information that we can find on the model is the importance of the variable
+and the number of the nodes for the tree.
+In figure 17, Mean Decrease accuracy shows that the most critical variable is credit History
+accounting over 80% of explanation of the model and followed by a significant difference by
+applicants’ income with around 20 %. The Mean decreases Gini also show that credit history
+is the most significant variable with over 60 % of significance, while gender is the least
+important.
+
+<img src="./Pics/weight.png" alt="weight"/>
+
+In figure below it shows the histogram of Number of nodes for the trees show that most common number
+of nodes in tree were between 70 and 75.
+
+<img src="./Pics/nodes.png" alt="nodes"/>
+
+Important: this project will use a black-box approach making use of other’s packages to analyse the information.
+The black-box approach has been chosen for its simplicity but needs to be noted that this approach entails a
+great peril of not understanding what happens within the function and end up with wrong results.
+
 # Refences
 
 - 1 - https://en.wikipedia.org/wiki/Statistical_classification
@@ -212,6 +240,8 @@ onwards the value does not change significantly.
 
 - Linux - Operating system
 - R programming language
+- ‘randomForest’ [10]
+- ‘e1071’[11]
 - CSV files
 
 # Authors
