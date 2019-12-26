@@ -154,7 +154,7 @@ and the test set was made of 20 %. The % has been chosen arbitrary but taking in
 consideration that over half of the data needed to be on the training side for the model to allow
 the model to be as trained as possible but leaving enough data to test the trained model.
 
-<img src="./Pics/trainValidate.png" alt="Plot Box"/>
+<img src="./Pics/trainValidate.png" alt="Train and validate"/>
 
 The Random Forest was applied by using the in-built function RandomForest()[10]. Parameter
 formula request of the target attribute which is Loan_Status and the independent attributes
@@ -164,11 +164,28 @@ data stands for training set, Ntree for number of trees, Mtry for number of vari
 sampled as candidates at each split, importance for predictor assessment and proximity for the
 calculation of proximity of the rows.
 
-<img src="./Pics/buildRf.png" alt="Plot Box"/>
+<img src="./Pics/buildRf.png" alt="BuildRF"/>
 
 Important: this project will use a black-box approach making use of other’s packages to analyse the information.
 The black-box approach has been chosen for its simplicity but needs to be noted that this approach entails a
 great peril of not understanding what happens within the function and end up with wrong results.
+
+<img src="./Pics/test1.png" alt="Plot Box"/>
+
+The results of the trained Random Forest model are an out of bag error of 16.59%, which means
+that 16.59 % of the classifications made by the model are wrong. 16% is a pretty good number
+since for many industry projects over 25% Out-of-bag error (OOB) would be considered not
+good enough. The confusion matrix shows a different picture. The True are well predicted but with a 0.037
+class error, however, the negatives are poorly assessed, and the class error is at 0.473.
+
+On the figure below are drawn three lines; Red line that represent YES class error, Green line that
+represents NO class error and Black line that represents OOB estimate error rate. It illustrates
+the rate of the three error regarding the number of trees used in the model.
+We see from figure below that the errors achieve their highest value around the tree number 10
+and from the to the tree number 100 the values decrease progressively. From tree number 100
+onwards the value does not change significantly.
+
+<img src="./Pics/errors.png" alt="Errors"/>
 
 # Refences
 
