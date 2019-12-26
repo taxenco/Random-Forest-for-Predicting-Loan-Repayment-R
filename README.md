@@ -129,8 +129,8 @@ for the outliers.
 
 Please find the summary and the boxplot diagram of the training dataset post-processing as per
 below:
-<img src="./Pics/plotBox2.png" alt="Plot Box"/>
 <img src="./Pics/afterCleaning.png" alt="Plot Box"/>
+<img src="./Pics/plotBox2.png" alt="Plot Box"/>
 
 # Refences
 
